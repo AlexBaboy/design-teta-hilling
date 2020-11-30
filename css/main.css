@@ -15,10 +15,15 @@ body {
 .header {
     height: 800px;
     background-color: #EEF9FF;
+    position: relative;
+}
+
+.header-row {
+    display: flex;
 }
 
 .nav {
-    padding-top: 26px;
+    padding-top: 32px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -74,7 +79,7 @@ body {
     line-height: 1;
     color: #363636;
     text-decoration: none;
-    margin-right: 48px;
+    margin-right: 43px;
     transition: color 0.2s;
 }
 
@@ -90,6 +95,7 @@ body {
 
 .header-content {
     width: 691px;
+    flex-shrink: 0;
 }
 
 .header-title span{
@@ -155,4 +161,27 @@ body {
     left: 0;
     top: 1px;
     background-image: url("../src/img/bullet.svg");
+}
+
+.header-img-wrapper {
+    width: 1260px;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+
+.header-image {
+    position: absolute;
+    right: -86px;
+    bottom: 0;
+}
+
+.header-arrow {
+    margin: 0 auto;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,60%);
 }
